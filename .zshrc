@@ -33,8 +33,8 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([%0-9]#)*=0=01;31
 zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
 
 # use editor built in zsh
-#autoload -U zcalc
-#autoload zed
+autoload -U zcalc
+autoload zed
 
 # forecast input
 #autoload predict-on
