@@ -257,3 +257,14 @@ bindkey -M menuselect 'l' vi-forward-char
 #zstyle ':vcs_info:git:*' formats       '%F{5}[%f%s%F{5}]%F{3}%F{5}[%f%r%F{5}]%F{3}%F{5}[%F{2}%b%F{5}]%F{1}%u%f%F{6}%c%f'
 #precmd() { vcs_info }
 #RPROMPT='${vcs_info_msg_0_}%f'
+
+# by K247
+alias hisless='history -i -100 | less'
+alias hislessa='history -i 1 | less'
+alias -g L='| less'
+alias -g H='| head'
+alias -g T='| tail'
+alias -g G='| grep'
+alias -g W='| wc'
+alias -g S='| sed'
+alias -g A='| awk'
