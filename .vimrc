@@ -29,9 +29,19 @@ set history=10000
 set clipboard=unnamed,autoselect "use clipboard ( unable in KUDPC default vim)
 "ERROR -- set iminsert=2 "off IME when exit from insert mode
 "close brackets autmatically
-imap { {}<LEFT>
-imap [ []<LEFT>
-imap ( ()<LEFT>
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+inoremap ` ``<LEFT>
+"counter for typo
+inoremap {} {}<LEFT>
+inoremap [] []<LEFT>
+inoremap () ()<LEFT>
+inoremap "" ""<LEFT>
+inoremap '' ''<LEFT>
+inoremap `` ``<LEFT>
 
 
 "##### default in KUDPC ( /etc/vimrc ) #####
