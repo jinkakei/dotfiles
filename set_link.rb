@@ -51,7 +51,7 @@ ret = delete_interactive( dotfiles )
 home = ENV[ 'HOME' ]
 Dir::chdir(home)
 clock = Time.now.strftime("%Y%m%d_%H%M")
-p clock
+#p clock
 # test
 #  Dir::chdir("#{home}/test")
 dotfiles.each do | df |
