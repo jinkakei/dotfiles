@@ -54,7 +54,18 @@ inoremap `` ``<LEFT>
 "set confirm "confirm before quit if unsaved files exist
 
 
+"Plugin by NeoBundle
+"filetype plugin indent off
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+end
 
+call neobundle#begin(expand('~/.vim/bundle/'))
 
+NeoBundle 'tpope/vim-endwise'
+  "ToDo: change autoindent width
 
+call neobundle#end()
+
+filetype plugin indent on
 
