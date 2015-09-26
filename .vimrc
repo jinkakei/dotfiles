@@ -1,3 +1,20 @@
+
+"Plugins by NeoBundle
+"filetype plugin indent off
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+end
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+NeoBundle 'tpope/vim-endwise'
+  "ToDo: change autoindent width
+
+call neobundle#end()
+
+filetype plugin indent on
+
+
 "##### display #####
 set number "line number
 set title "show file title
@@ -44,6 +61,9 @@ inoremap '' ''<LEFT>
 inoremap `` ``<LEFT>
 
 
+"
+nnoremap ruby :!ruby %
+
 "##### default in KUDPC ( /etc/vimrc ) #####
 " TODO yank whole file and cut confilicting ones
 "syntax enable "
@@ -53,19 +73,4 @@ inoremap `` ``<LEFT>
 "set ruler "show current line & column
 "set confirm "confirm before quit if unsaved files exist
 
-
-"Plugin by NeoBundle
-"filetype plugin indent off
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-end
-
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-NeoBundle 'tpope/vim-endwise'
-  "ToDo: change autoindent width
-
-call neobundle#end()
-
-filetype plugin indent on
 
