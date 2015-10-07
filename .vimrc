@@ -62,7 +62,10 @@ inoremap `` ``<LEFT>
 
 
 "
-nnoremap ruby :!ruby %
+"nnoremap ruby :!ruby %
+nnoremap ruby :write<CR>:!ruby %
+
+"keymap
 
 "##### default in KUDPC ( /etc/vimrc ) #####
 " TODO yank whole file and cut confilicting ones
