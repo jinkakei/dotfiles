@@ -1,5 +1,12 @@
 
 "Plugins by NeoBundle
+"  How to add NeoBundle
+"    $ mkdir -p ~/.vim/bundle
+"    $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+"    ( edit .vimrc )
+"    in vim
+"      :NeoBundleInstall
+"      :NeoBundleUpdate
 "filetype plugin indent off
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
