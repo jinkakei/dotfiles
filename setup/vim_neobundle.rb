@@ -8,8 +8,8 @@ nbdl = "neobundle.vim"
 cmd_dl = "git clone #{g_url}/#{nbdl} #{bdl_path}/#{nbdl}"
   puts( cmd_dl ); system( cmd_dl )
 
+puts
 puts( "Next Step")
 puts( "  $ vim test.txt")
 puts( "    :NeoBundleInstall")
 puts( "    :NeoBundleUpdate")
-
