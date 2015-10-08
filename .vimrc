@@ -69,11 +69,11 @@ nnoremap ruby :write<CR>:!ruby %
 
 "##### default in KUDPC ( /etc/vimrc ) #####
 " TODO yank whole file and cut confilicting ones
-"syntax enable "
+syntax enable "
 "set nocompatible "use vim setting (not vi)
     " !CAUTION!: This resets some settings.
-"set showmode "display current mode
-"set ruler "show current line & column
-"set confirm "confirm before quit if unsaved files exist
+set showmode "display current mode
+set ruler "show current line & column
+set confirm "confirm before quit if unsaved files exist
 
 
