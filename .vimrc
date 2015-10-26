@@ -57,7 +57,7 @@ set clipboard=unnamed,autoselect "use clipboard ( unable in KUDPC default vim)
 "escape from insert mode
 inoremap <silent> jj <ESC>
 "inoremap <silent> <C-j> j "?
-inoremap <silent> kk <ESC>
+"inoremap <silent> kk <ESC>
 "inoremap <silent> <C-k> k
 "Consideration of key mapping: https://gist.github.com/deris/550128
 nnoremap ; :
