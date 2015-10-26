@@ -52,6 +52,20 @@ set hidden "enable open another file if unsaved files exist
 set history=10000
 set clipboard=unnamed,autoselect "use clipboard ( unable in KUDPC default vim)
 "ERROR -- set iminsert=2 "off IME when exit from insert mode
+
+"##### key-mapping #####
+"escape from insert mode
+inoremap <silent> jj <ESC>
+"inoremap <silent> <C-j> j "?
+inoremap <silent> kk <ESC>
+"inoremap <silent> <C-k> k
+"Consideration of key mapping: https://gist.github.com/deris/550128
+nnoremap ; :
+"nnoremap : ;
+noremap <Space>h ^
+noremap <Space>l $
+noremap <Space>/ *
+noremap <Space>m %
 "close brackets autmatically
 inoremap { {}<LEFT>
 inoremap [ []<LEFT>
@@ -71,6 +85,7 @@ inoremap `` ``<LEFT>
 "
 "nnoremap ruby :!ruby %
 nnoremap ruby :write<CR>:!ruby %
+inoremap =b =begin<CR>=end
 
 "keymap
 
