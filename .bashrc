@@ -113,8 +113,9 @@ fi
 # added by Kei Nishinak
 PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:~/bin_k247
 export PATH
-~/bin_k247/git_pull_each_gdir.rb ask
 alias rm='rm -i'
-alias exit='source exit_with_git.sh'
+# 2016-04-05: comment out
+#~/bin_k247/git_pull_each_gdir.rb ask
+#alias exit='source exit_with_git.sh'
   # ~/bin_k247/exit_with_git.sh
-alias exit_origin='\exit'
+#alias exit_origin='\exit'

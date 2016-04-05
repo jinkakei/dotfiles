@@ -1,6 +1,10 @@
 #!/usr/bin/ruby
 
 # ToDo: mv ~/.vimrc ~/.vimrc_tmp_backup # if exist
+# ToDo: check dotfiles/.* ( set link to files which are not exist in dotfiles )
+
+
+
 
 def delete_interactive( ary )
   alen = ary.length
