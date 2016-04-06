@@ -4,5 +4,7 @@
 
 # how to clone
 # $ git clone git@github.com:jinkakei/dotfies
-
+#     !CAUTION! cannot push with this method
+#       $ git remote set-url origin git@github.com:jinkakei/dotfiles.git
+#     ToDo: find better clone command
 
