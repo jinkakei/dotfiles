@@ -46,18 +46,16 @@ end
 
 
 puts "This program set link at HOME to HOME/dotfiles"
+home = ENV[ 'HOME' ]
+Dir::chdir( home + "/dotfiles" )
 
 dotfiles = Dir::glob(".*")
   [".", "..", ".git"].each do | delf | dotfiles.delete( delf ) end
 
 ret = delete_interactive( dotfiles )
 
-home = ENV[ 'HOME' ]
-Dir::chdir(home)
 clock = Time.now.strftime("%Y%m%d_%H%M")
-#p clock
-# test
-#  Dir::chdir("#{home}/test")
+Dir::chdir(home)
 dotfiles.each do | df |
   fpath ="#{home}/dotfiles/#{df}"
   if File.exist?(df)
