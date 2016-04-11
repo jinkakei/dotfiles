@@ -114,6 +114,13 @@ fi
 PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:~/bin_k247
 export PATH
 alias rm='rm -i'
+#  set ifort
+  if [ -f ~/.ifort_set ]; then
+      source ~/.ifort_set
+  fi
+  #~/.ifort_set ( change option by architecture: 32 or 64 bit)
+  #source /opt/intel/compilers_and_libraries/linux/bin/compilervars.sh intel64
+
 # 2016-04-05: comment out
 #~/bin_k247/git_pull_each_gdir.rb ask
 #alias exit='source exit_with_git.sh'
