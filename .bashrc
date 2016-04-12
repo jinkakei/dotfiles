@@ -124,6 +124,7 @@ set -C
   fi
   #~/.ifort_set ( change option by architecture: 32 or 64 bit)
   #source /opt/intel/compilers_and_libraries/linux/bin/compilervars.sh intel64
+  #source /opt/intel/compilers_and_libraries/linux/bin/compilervars.sh ia32
 
 # 2016-04-05: comment out
 #~/bin_k247/git_pull_each_gdir.rb ask
