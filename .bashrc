@@ -114,6 +114,10 @@ fi
 PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:~/bin_k247
 export PATH
 alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+set -C
+  # forbidden overwrite by redirect: http://hogem.hatenablog.com/entry/20130730/1375193437
 #  set ifort
   if [ -f ~/.ifort_set ]; then
       source ~/.ifort_set
