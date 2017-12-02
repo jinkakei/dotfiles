@@ -16,8 +16,10 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
+#HISTSIZE=1000
+HISTSIZE=50000
 HISTFILESIZE=2000
+HISTTIMEFORMAT='%Y/%m/%d %H:%M:%S '
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -125,9 +127,15 @@ set -C
   #~/.ifort_set ( change option by architecture: 32 or 64 bit)
   #source /opt/intel/compilers_and_libraries/linux/bin/compilervars.sh intel64
   #source /opt/intel/compilers_and_libraries/linux/bin/compilervars.sh ia32
-
+# 2017-08-02: for nhmodel.F
+ulimit -s unlimited
 # 2016-04-05: comment out
 #~/bin_k247/git_pull_each_gdir.rb ask
 #alias exit='source exit_with_git.sh'
   # ~/bin_k247/exit_with_git.sh
 #alias exit_origin='\exit'
+
+# 2017-12-02: for rbenv
+[[ -d ~/.rbenv ]] && \
+  export PATH=${HOME}/.rbenv/bin:${PATH} && \
+  eval "$(rbenv init -)"
