@@ -233,14 +233,15 @@ nnoremap ruby :write<CR>:!ruby %
 inoremap =b =begin<CR>=end
 
 " begin -- add 2017-12-11
+"   cut 2018-01-05  noisy on coding
 " insert yyyy/MM/dd
-cnoremap date <ESC>a<C-r>=strftime("%Y/%m/%d")<CR><ESC>
+"cnoremap date <ESC>a<C-r>=strftime("%Y/%m/%d")<CR><ESC>
 " insert yyyy/MM/dd hh:mm:ss
-cnoremap datetime <ESC>a<C-r>=strftime("%Y/%m/%d %H:%M:%S")<CR><ESC>
+"cnoremap datetime <ESC>a<C-r>=strftime("%Y/%m/%d %H:%M:%S")<CR><ESC>
 " 
 " My arrange
-inoremap date <C-r>=strftime("%Y/%m/%d")<CR>
-inoremap datet <C-r>=strftime("%Y/%m/%d %H:%M:%S")<CR>
+"inoremap date <C-r>=strftime("%Y/%m/%d")<CR>
+"inoremap datet <C-r>=strftime("%Y/%m/%d %H:%M:%S")<CR>
 " End: My arrange for insert date
 "
 " check spell
